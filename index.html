@@ -691,7 +691,7 @@ function JobCard({job,onTap}) {
 
 // ── Kanban ────────────────────────────────────────────────────────────────────
 function KanbanView({jobs,onDetail}) {
-  const scrollRef = React.useRef(null);
+  const scrollRef = useRef(null);
   const [activeIdx, setActiveIdx] = useState(0);
 
   function onScroll() {
